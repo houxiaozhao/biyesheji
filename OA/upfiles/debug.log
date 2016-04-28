@@ -1,0 +1,4 @@
+[0406/191351:ERROR:main_dll_loader_win.cc(274)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+[0406/191559:ERROR:main_dll_loader_win.cc(274)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+[0406/204449:ERROR:main_dll_loader_win.cc(274)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded
+[0419/191502:ERROR:main_dll_loader_win.cc(274)] Could not find exported function RelaunchChromeBrowserWithNewCommandLineIfNeeded

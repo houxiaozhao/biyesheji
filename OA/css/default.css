@@ -1,0 +1,273 @@
+﻿body 
+{
+    padding-bottom:70px;
+    padding-top:70px;
+}
+.main-nav {
+           
+        }
+ 
+            .main-nav.nav-tabs.nav-stacked > li > a {
+                padding: 10px 8px;
+                font-size: 12px;
+                font-weight: 600;
+                color: #4A515B;
+                background: #E9E9E9;
+                background: -moz-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FAFAFA), color-stop(100%,#E9E9E9));
+                background: -webkit-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
+                background: -o-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
+                background: -ms-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
+                background: linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
+                border: 1px solid #D5D5D5;
+                border-radius: 4px;
+            }
+ 
+                .main-nav.nav-tabs.nav-stacked > li > a > span {
+                    color: #4A515B;
+                }
+ 
+                .main-nav.nav-tabs.nav-stacked > li.active > a, .main-nav.nav-tabs.nav-stacked > li > a:hover {
+                    color: #FFF;
+                    background: #3C4049;
+                    background: -moz-linear-gradient(top, #4A515B 0%, #3C4049 100%);
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4A515B), color-stop(100%,#3C4049));
+                    background: -webkit-linear-gradient(top, #4A515B 0%,#3C4049 100%);
+                    background: -o-linear-gradient(top, #4A515B 0%,#3C4049 100%);
+                    background: -ms-linear-gradient(top, #4A515B 0%,#3C4049 100%);
+                    background: linear-gradient(top, #4A515B 0%,#3C4049 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4A515B', endColorstr='#3C4049');
+                    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4A515B', endColorstr='#3C4049')";
+                    border-color: #2B2E33;
+                }
+ 
+                    .main-nav.nav-tabs.nav-stacked > li.active > a, .main-nav.nav-tabs.nav-stacked > li > a:hover > span {
+                        color: #FFF;
+                    }
+ 
+            .main-nav.nav-tabs.nav-stacked > li {
+                margin-bottom: 4px;
+            }
+ 
+        /*定义二级菜单样式*/
+        .secondmenu a {
+            font-size: 10px;
+            color: #4A515B;
+            text-align: center;
+        }
+ 
+        .navbar-static-top {
+            background-color: #212121;
+            margin-bottom: 5px;
+        }
+ 
+        .navbar-brand {
+            background: url('') no-repeat 10px 8px;
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 50px;
+            color: #fff;
+        }
+
+.list_table{
+    margin-bottom:0px;
+}
+.td_right{
+    text-align:right;
+}
+.td_left{
+    text-align:left;
+}
+.td_center
+{
+    text-align:center;
+}
+a{
+    text-decoration:none;
+}
+.table_block
+{
+    margin:10px 0 45px 0;
+}
+.width70
+{
+    width:70px;
+}
+.width92
+{
+    width:92px;
+    display:inline-block;
+}
+.width105
+{
+    width:105px;
+    display:inline-block;
+}
+.width128
+{
+    width:128px;
+    display:inline-block;
+}
+.width160
+{
+    width:160px;
+    display:inline-block;
+}
+.width200
+{
+    width:200px;
+    display:inline-block;
+}
+.width210
+{
+    width:210px;
+    display:inline-block;
+}
+.width330
+{
+    width:330px;
+    display:inline-block;
+}
+.width380
+{
+    width:380px;
+    display:inline-block;
+}
+.width430
+{
+    width:430px;
+    display:inline-block;
+}
+.width_39
+{
+    width:39.6%;
+    display:inline-block;
+}
+.width_13
+{
+    width:13%;
+    display:inline-block;}
+ .width_17
+{
+    width:17.3%;
+    display:inline-block;}
+        .width_3
+{
+    width:3%;
+    display:inline-block;}
+    .width_7
+{
+    width:7.14%;
+    display:inline-block;}
+        .width_20
+{
+    width:20%;
+    display:inline-block;}
+            .width_26
+{
+    width:26%;
+    display:inline-block;}
+           .width_30
+{
+    width:30%;
+    display:inline-block;} 
+    
+    
+            .width_40
+{
+    width:40%;
+    display:inline-block;}
+.width_50
+{
+    width:50%;
+}
+.width_100
+{
+    width:100%;
+    display:inline-block;
+}
+.height100
+{
+    height:100px;
+}
+.height_100
+{
+    height:100%;
+}
+.inline
+{
+    display:inline-block}
+   .flex
+   {
+       display:inline-flex;
+   }
+.calendar
+{
+    width:200px;
+    display: inline-block;
+}
+.more
+{
+    text-align:right;
+}
+.fontlarger
+{
+        font-size: larger;}
+.textarea
+{
+    
+    resize: none;
+    overflow-y:visible;
+    
+}
+    .marbtm
+    {
+        margin-bottom:50px;
+    }
+    .mar
+    {
+        margin-top:10px;
+        margin-bottom:10px;}
+    .txt
+    {
+        display:inline-block;}
+    
+    
+    
+    
+    
+.paginator { font: 12px Arial, Helvetica, sans-serif;padding:10px 20px 10px 0; margin: 0px;}
+.paginator a {border:solid 1px #ccc;color:#0063dc;cursor:pointer;text-decoration:none;}
+.paginator a:visited {padding: 1px 6px; border: solid 1px #ddd; background: #fff; text-decoration: none;}
+.paginator .cpb {border:1px solid #F50;font-weight:700;color:#F50;background-color:#ffeee5;}
+.paginator a:hover {border:solid 1px #F50;color:#f60;text-decoration:none;}
+.paginator a,.paginator a:visited,.paginator .cpb,.paginator a:hover  
+{float:left;height:16px;line-height:16px;min-width:10px;_width:10px;margin-right:5px;text-align:center;
+ white-space:nowrap;font-size:12px;font-family:Arial,SimSun;padding:0 3px;}
+ 
+ 
+ .martop
+ {
+     margin:30px 0px;
+ }
+ 
+ 
+ .txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+
+
+.state-info embed
+{
+    height:70px;
+    width:186px;
+}
+.newimg
+{
+    padding:10px;
+    width:30%;
+}

@@ -1,0 +1,253 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="OA.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="keywords" content="admin, dashboard, bootstrap, template, flat, modern, theme, responsive, fluid, retina, backend, html5, css, css3">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="#" type="image/png">
+    <title>OA</title>
+    <!--icheck-->
+    <link href="js/iCheck/skins/minimal/minimal.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/square.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/red.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/blue.css" rel="stylesheet">
+    <!--dashboard calendar-->
+    <link href="css/clndr.css" rel="stylesheet">
+    <!--Morris Chart CSS -->
+    <link rel="stylesheet" href="js/morris-chart/morris.css">
+    <!--common-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="sticky-header">
+    <script type="text/javascript" src="<%= ResolveClientUrl("~/js/jquery-1.10.2.min.js") %>"></script>
+    <form id="form1" runat="server">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Modal title</h4>
+                    <small class="modalsmail"></small>
+                </div>
+                <div class="modal-body">
+                    <p class="content">
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <!-- left side start-->
+        <div class="left-side sticky-left-side">
+            <!--logo and iconic logo start-->
+            <div class="logo">
+                <a href="~/main.aspx" runat="server">
+                    <img runat="server" src="~/images/logo.png" alt=""></a>
+            </div>
+            <div class="logo-icon text-center">
+                <a href="main.aspx">
+                    <img runat="server" src="~/images/logo_icon.png" alt=""></a>
+            </div>
+            <!--logo and iconic logo end-->
+            <div class="left-side-inner">
+                <!-- visible to small devices only -->
+                <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                    <div class="media logged-user">
+                        <img runat="server" alt="" src="~/images/photos/user-avatar.png" class="media-object">
+                        <div class="media-body">
+                            <h4>
+                                <a href="#">John Doe</a></h4>
+                            <span>"Hello There..."</span>
+                        </div>
+                    </div>
+                    <h5 class="left-nav-title">
+                        Account Information</h5>
+                    <ul class="nav nav-pills nav-stacked custom-nav">
+                        <li><a href="#"><i class="fa fa-user"></i><span>Profile</span></a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i><span>Settings</span></a></li>
+                        <li><a href="#"><i class="fa fa-sign-out"></i><span>Sign Out</span></a></li>
+                    </ul>
+                </div>
+                <!--sidebar nav start-->
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                    <li class="active"><a runat="server" href="~/main.aspx"><i class="fa fa-home"></i><span>
+                        主页</span></a></li>
+                    <li class="menu-list"><a href=""><i class="fa fa-laptop"></i><span>个人考勤</span></a>
+                        <ul class="sub-menu-list">
+                            <li><a runat="server" href="~/admin/Check/Attendance.aspx">上下班登记</a></li>
+                            <li><a runat="server" href="~/admin/Check/GoOutRegist.aspx">外出登记</a></li>
+                            <li><a runat="server" href="~/admin/Check/leave.aspx">请假登记</a></li>
+                            <li><a runat="server" href="~/admin/Check/Evection.aspx">出差登记</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list"><a href=""><i class="fa fa-book"></i><span>工作计划</span></a>
+                        <ul class="sub-menu-list">
+                            <li><a runat="server" href="~/admin/Plan/AddPlan.aspx">新建计划</a></li>
+                            <li><a runat="server" href="~/admin/Plan/Plan.aspx">我的计划</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list"><a href=""><i class="fa fa-cogs"></i><span>日程管理</span></a>
+                        <ul class="sub-menu-list">
+                            <li><a runat="server" href="~/admin/CalendarManage/HavingCalendar.aspx">查看日程</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list"><a href=""><i class="fa fa-envelope"></i><span>邮件</span></a>
+                        <ul class="sub-menu-list">
+                            <li><a runat="server" href="~/admin/Email/SendEmail.aspx">发邮件</a></li>
+                            <li><a runat="server" href="~/admin/Email/Email.aspx">我的邮件</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list"><a href=""><i class="fa fa-tasks"></i><span>通讯录</span></a>
+                        <ul class="sub-menu-list">
+                            <li><a runat="server" href="~/admin/AddressManage/ContactsList.aspx">联系人维护</a></li>
+                            <li><a runat="server" href="~/admin/AddressManage/EmploueeAddress.aspx">员工通讯录</a></li>
+                            <li><a runat="server" href="~/admin/AddressManage/MyGroup.aspx">我的分组</a></li>
+                            <li><a runat="server" href="~/admin/AddressManage/AddContacts.aspx">增加联系人</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list"><a href=""><i class="fa fa-bar-chart-o"></i><span>个人资料</span></a>
+                        <ul class="sub-menu-list">
+                            <li><a runat="server" href="~/admin/personal/NewPwd.aspx">密码修改</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list"><a href="#"><i class="fa fa-th-list"></i><span>记事本</span></a>
+                        <ul class="sub-menu-list">
+                            <li><a runat="server" href="~/admin/Note/note.aspx">查看记事本</a></li>
+                            <li><a runat="server" href="~/admin/Note/noteMessage.aspx">新建记事本</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list"><a href="#"><i class="fa fa-map-marker"></i><span>新闻</span></a>
+                        <ul class="sub-menu-list">
+                            <li><a runat="server" href="~/admin/News/NewsAdd.aspx">发布新闻</a></li>
+                            <li><a runat="server" href="~/admin/News/News.aspx">新闻列表</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list"><a href=""><i class="fa fa-file-text"></i><span>公文流程</span></a>
+                        <ul class="sub-menu-list">
+                            <li><a runat="server" href="~/admin/flow/AddApply.aspx">我要申请</a></li>
+                            <li><a runat="server" href="~/admin/flow/MyApplyList.aspx">我的申请</a></li>
+                            <li><a runat="server" href="~/admin/flow/MyApprove.aspx">我的审批列表</a></li>
+                            <li><a runat="server" href="~/admin/flow/MyPass.aspx">已经审批列表</a></li>
+                            <li><a runat="server" href="~/admin/flow/CustomList.aspx">自定义流程</a></li>
+                        </ul>
+                    </li>
+                    <li><a runat="server" href="~/admin/Meeting/MyMeetingList.aspx"><i class="fa fa-sign-in">
+                    </i><span>会议列表</span></a></li>
+                    <li><a runat="server" href="~/admin/suggest.aspx"><i class="fa fa-edit"></i><span>投诉意见</span></a></li>
+                    <li><a runat="server" href="~/Turing.aspx"><i class="fa fa-edit"></i><span>turing</span></a></li>
+                </ul>
+                <!--sidebar nav end-->
+            </div>
+        </div>
+        <!-- left side end-->
+        <!-- main content start-->
+        <div class="main-content">
+            <!-- header section start-->
+            <div class="header-section">
+                <!--toggle button start-->
+                <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+                <!--toggle button end-->
+                <!--notification menu start -->
+                <div class="menu-right">
+                    <ul class="notification-menu">
+                        
+                        <li><a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+                            <i class="fa fa-envelope-o"></i><span class="badge" id="emailcount" runat="server">
+                            </span></a>
+                            <div class="dropdown-menu dropdown-menu-head pull-right">
+                                <h5 class="title" id="title" runat="server">
+                                </h5>
+                                <ul class="dropdown-list normal-list">
+                                    <div class="table-responsive">
+                                        <asp:DataList ID="dl" runat="server" Width="100%" CellSpacing="0" CssClass="table table-hover table-striped">
+                                            <ItemTemplate>
+                                                <table>
+                                                    <tr onclick='window.location.href="<%= ResolveClientUrl("~/admin/Email/EmailMessage.aspx") %>?sid=<%#Eval("Sid")%>"; '
+                                                        class="width_100">
+                                                        <td>
+                                                            <a class=" width105">
+                                                                <%#Eval("sendname")%></a> <a>
+                                                                    <%#Eval("Title")%></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </ItemTemplate>
+                                        </asp:DataList>
+                                    </div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a runat="server" target="_blank" href="~/Administrator/LoginAndOperation/loginlog.aspx"
+                            class="btn btn-default dropdown-toggle info-number"><i class="fa fa-gears"></i></a>
+                        </li>
+                        <li><a runat="server" target="_blank" href="~/WebExplorer.aspx" class="btn btn-default dropdown-toggle info-number">
+                            <i class="fa fa-cloud"></i></a></li>
+                        <li><a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <%=getname() %>
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                                <li><a><i class="fa fa-sign-out"></i>
+                                    <asp:Button ID="Button1" runat="server" Text="Log Out" CssClass="btn btn-link" OnClick="Button1_Click" /></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--notification menu end -->
+            </div>
+            <!-- header section end-->
+            <!-- page heading start-->
+            <div class="page-heading">
+                <h3>
+                    OA
+                </h3>
+                <div class="state-info">
+                  <embed name="plugin" id="plugin" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.swf" type="application/x-shockwave-flash" title="Adobe Flash Player">
+                </div>
+            </div>
+            <!-- page heading end-->
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-12">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+            <!--footer section start-->
+            <footer>
+            2014 &copy; AdminEx by ThemeBucket
+        </footer>
+            <!--footer section end-->
+        </div>
+        <!-- main content end-->
+    </section>
+    </form>
+    <script type="text/javascript" src="<%= ResolveClientUrl("~/js/xmeet.api.js?nickname="+getname()+"&xnest=yourNameSpace&xnest_name=聊天室（在信息前加@，就可以和小M聊天）") %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl("~/js/jquery-ui-1.9.2.custom.min.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl("~/js/jquery-migrate-1.2.1.min.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl("~/js/bootstrap.min.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl("~/js/modernizr.min.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl("~/js/jquery.nicescroll.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl("~/js/sparkline/jquery.sparkline.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl("~/js/sparkline/sparkline-init.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl("~/js/scripts.js") %>"></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+﻿
+.Dialog_titleBar
+{
+	cursor: move;
+}
+.Dialog_titleCloseButton
+{
+	float: right;
+	cursor: pointer;
+}
+.Dialog_buttonPanel
+{
+	text-align: center;
+}
